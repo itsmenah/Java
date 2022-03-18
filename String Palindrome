@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        String str=sc.nextLine();
+        String[] str1=new String[str.length()];
+        int i,j;
+        for(i=0;i<str.length();i++)
+        {
+            str1[i]=str.substring(i,i+1);
+            
+        }
+        String str2="";
+        for(j=i-1;j>=0;j--)
+        {
+            str2=str2+str1[j];
+        }
+        System.out.println(str.toLowerCase().equals(str2.toLowerCase()));
+        
+}
+}
